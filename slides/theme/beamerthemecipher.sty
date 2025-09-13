@@ -1,0 +1,28 @@
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{theme/beamerthemecipher}[2025/05/04 v1.0 Cipher Beamer Theme]
+
+% Load required packages
+\RequirePackage{
+	mathtools,unicode-math,bookmark,
+	amsmath,amsthm,amssymb,amsfonts,graphicx,setspace,cancel,
+	etoolbox,xstring,fancybox,xspace,titlecaps,gensymb,hyperref,hyperxmp
+}
+
+% Hyperref/HyperXMP
+\makeatletter
+\hypersetup{pdfa,pdfusetitle,pdflang=en-US,colorlinks=true,linkcolor=cipheraccent,urlcolor=cipheraccent,citecolor=cipheraccent,bookmarksopen=true,keeppdfinfo}
+\makeatother
+
+% TikZ libraries
+\RequirePackage{tikz}
+\RequirePackage{pgfplots}
+\RequirePackage{pgf-pie}
+\pgfplotsset{compat=1.18}
+
+% Load dependent themes
+\usecolortheme{cipher}
+\usefonttheme{cipher}
+\useinnertheme{cipher}
+\useoutertheme{cipher}
+\RequirePackage{../../misc/macros/joc}
+\RequirePackage{../../misc/macros/msc5}
