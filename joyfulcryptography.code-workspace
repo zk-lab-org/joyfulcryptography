@@ -4,5 +4,7 @@
 			"path": "."
 		}
 	],
-	"settings": {}
+	"settings": {
+         "latex-workshop.latex.recipe.default": "lastUsed"
+    }
 }
